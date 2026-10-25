@@ -1,0 +1,73 @@
+{
+  "name": "Lead Capture + CRM Following Automation",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "534997e7-3020-487d-83e0-690ff868e262",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2.2,
+      "position": [
+        0,
+        0
+      ],
+      "id": "61818ce7-dbca-40f1-b163-162e0a60da93",
+      "name": "Webhook",
+      "webhookId": "534997e7-3020-487d-83e0-690ff868e262"
+    },
+    {
+      "parameters": {
+        "authentication": "appToken",
+        "email": "laiba4t4khi@gmail.com",
+        "additionalFields": {
+          "firstName": "Laiba",
+          "lastName": "Test"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.hubspot",
+      "typeVersion": 2.2,
+      "position": [
+        224,
+        0
+      ],
+      "id": "422bdfc9-fed0-4485-9d6c-de126ff75fbc",
+      "name": "Create or update a contact",
+      "credentials": {
+        "hubspotAppToken": {
+          "id": "T8aGpAYgWzsX74Gd",
+          "name": "HubSpot Service Key account 4"
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "Create or update a contact",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": true,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate"
+  },
+  "versionId": "0d2e54fd-793f-4470-bb10-d1bf75ef9143",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "84b822e82efda94597390c9b1686616b055e7b757bef075996c251443f2b5425"
+  },
+  "nodeGroups": [],
+  "id": "htAsWPdhFNnuA3id",
+  "tags": []
+}
