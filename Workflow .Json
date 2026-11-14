@@ -57,17 +57,4 @@
       ]
     }
   },
-  "active": true,
-  "settings": {
-    "executionOrder": "v1",
-    "binaryMode": "separate"
-  },
-  "versionId": "0d2e54fd-793f-4470-bb10-d1bf75ef9143",
-  "meta": {
-    "templateCredsSetupCompleted": true,
-    "instanceId": "84b822e82efda94597390c9b1686616b055e7b757bef075996c251443f2b5425"
-  },
-  "nodeGroups": [],
-  "id": "htAsWPdhFNnuA3id",
-  "tags": []
-}
+  "
